@@ -1,0 +1,158 @@
+/* NORMALIZANDO ESTILOS POR DEFECTO */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+/* ESTILOS DE CONTENEDOR */
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.article{
+    background: hsl(210, 46%, 95%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.article__conte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 260px;
+    margin: auto;
+}
+
+.article__izq {
+    height: 100%;
+    width: 28%;
+}
+
+.article__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+    border-radius: 15px 0 0 15px;
+}
+
+/* LADO DERECHO */
+.article__derch{
+    background: #fff;
+    color: rgb(72, 85, 106);
+    width: 45%;
+    height: 100%;
+    padding: 14px 32px;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+}
+
+.article__derch-title{
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.article__derch-text {
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.article__user{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.arcticle__user-conte{
+    display: flex;
+}
+
+.article__user-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+}
+
+.article__user-info{
+    margin-left: 14px;
+}
+
+.article__icon{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    background: rgb(236, 242, 248);
+    width: 32px;
+    height: 32px;
+    border-radius: 90%;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.article__icon:hover{
+    background: rgb(72, 85, 106);
+    color: #fff;
+}
+
+.share {
+    position: absolute;
+    top: 120px;
+    right: -79px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    height: 52px;
+    width: 60%;
+    background: rgb(72, 85, 106);
+    color: #fff;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 12px;
+    opacity: 0;
+}
+
+.change{
+    background: rgb(72, 85, 106);
+    color: #fff;
+    opacity: 1;
+}
+
+.share__text{
+    font-size: 16px;
+}
+
+.share__social{
+    font-size: 26px;
+}
+
+.share__social>i {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.share__social>i:hover {
+    color: rgb(236, 242, 248);
+}
+
+.share__arrow{
+    position: absolute;
+    bottom: -19px;
+    font-size: 24px;
+    color: rgb(72, 85, 106);
+    
+}
