@@ -8,6 +8,7 @@
 body {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
+  background: hsl(210, 46%, 95%);
 }
 
 /* ESTILOS DE CONTENEDOR */
@@ -18,7 +19,6 @@ body {
 }
 
 .article {
-  background: hsl(210, 46%, 95%);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -125,7 +125,7 @@ body {
   border-radius: 12px;
   opacity: 0;
 }
-
+/* Clase para activar el btn mediante el .js */
 .change {
   background: rgb(72, 85, 106);
   color: #fff;
@@ -155,15 +155,33 @@ body {
   font-size: 24px;
   color: rgb(72, 85, 106);
 }
+
+/* Pie de pagina FOOTER */
+.pie__text {
+  color: rgb(0, 105, 112);
+  text-align: center;
+  margin-top: 14px;
+}
+
+.pie__text > a {
+  text-decoration: none;
+  color: rgb(227, 136, 38);
+}
+
 /* RESPONSIVE DISENG A 1440PX */
 @media screen and (max-width: 375px) {
-  .article__conte {
+  /* .article{
+      margin-top: 30px;
+  } */
+
+    .article__conte {
     flex-direction: column;
     width: 90%;
   }
 
   .article__izq {
     width: 100%;
+    height: 75%;
   }
 
   .article__img {
@@ -207,14 +225,11 @@ body {
     justify-content: start;
   }
 
+/* Clase para activar el btn mediante el .js */
   .change {
     background: rgb(72, 85, 106);
     color: #fff;
     opacity: 1;
-  }
-
-  .background-icon{
-      background: #fff;
   }
 
   .share__arrow {
@@ -226,7 +241,7 @@ body {
     margin: 0 25px 0 18px;
   }
 
-  .article__icon{
-      z-index: 10;
+  .article__icon {
+    z-index: 10;
   }
 }
