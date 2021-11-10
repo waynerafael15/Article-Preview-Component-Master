@@ -168,31 +168,38 @@ body {
   color: rgb(227, 136, 38);
 }
 
-/* RESPONSIVE DISENG A 1440PX */
+/* RESPONSIVE DISENG A 375X */
 @media screen and (max-width: 375px) {
   /* .article{
       margin-top: 30px;
   } */
 
-    .article__conte {
+  .article__conte {
     flex-direction: column;
     width: 90%;
+    height: 405px;
   }
 
   .article__izq {
     width: 100%;
-    height: 75%;
+    height: 49%;
   }
 
   .article__img {
     border-radius: 15px 15px 0 0;
   }
 
-  .article__derch {
+  /* .article__derch {
     width: 100%;
     height: 50vh;
     border-radius: 0 0 15px 15px;
     padding: 24px 32px;
+  } */
+  .article__derch {
+    width: 100%;
+    height: 62%;
+    border-radius: 0 0 15px 15px;
+    padding: 20px 25px 3px 25px;
   }
 
   .article__derch-title {
@@ -213,7 +220,7 @@ body {
     opacity: 1;
   } */
 
-  .share {
+  /* .share {
     bottom: 0;
     right: 0;
     height: 74px;
@@ -223,9 +230,20 @@ body {
     align-items: center;
     border-radius: 0 0 12px 12px;
     justify-content: start;
+  } */
+
+  .share {
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    background: rgb(72, 85, 106);
+    color: #fff;
+    align-items: center;
+    border-radius: 0 0 12px 12px;
+    justify-content: start;
   }
 
-/* Clase para activar el btn mediante el .js */
+  /* Clase para activar el btn mediante el .js */
   .change {
     background: rgb(72, 85, 106);
     color: #fff;
